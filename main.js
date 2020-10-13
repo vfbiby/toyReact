@@ -2,4 +2,12 @@ for(let i of [1, 2, 3]){
   console.log(i);
 }
 
-let a = <div/>
+function createElement(tagName, attributes, ...children){
+  return document.createElement(tagName)
+}
+
+window.a = <div id="a" class="c">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
