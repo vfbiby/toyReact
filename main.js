@@ -8,6 +8,10 @@ function createElement(tagName, attributes, ...children){
     e.setAttribute(p, attributes[p])
   }
 
+  for(let child of children){
+    e.appendChild(child)
+  }
+
   return e;
 }
 
